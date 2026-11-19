@@ -96,7 +96,7 @@ A fast, lightweight, tvOS 26 & macOS–inspired home screen for Android TV & Goo
 - **Multi-User Profiles & Live Weather**
   - Up to 3 profiles, each with its own app order, hidden apps, and Continue Watching list, plus a free 5-day weather forecast via Open-Meteo, MET Norway, or wttr.in.
 
-- **Ultra-Lightweight & Fast (Android 7.0 – Android 14+)**
+- **Ultra-Lightweight & Fast (Android 5.0 (API 21) – Android 14+)**
   - Pure Android SDK Java with zero third-party runtime dependencies (~5.7 MB APK, ~30 MB private RAM, 0.0% background CPU).
 
 ---
@@ -116,7 +116,7 @@ A fast, lightweight, tvOS 26 & macOS–inspired home screen for Android TV & Goo
   - Up to 3 profiles, each with its own app order, hidden apps, and Continue Watching list.
   - Free 5-day weather forecast via Open-Meteo, MET Norway, or wttr.in (no API key required).
 
-- **Ultra-Lightweight, Fast & Legacy Android TV Ready (Android 7.0 – Android 14+)**
+- **Ultra-Lightweight, Fast & Legacy Android TV Ready (Android 5.0 (API 21) – Android 14+)**
   - Pure Android SDK Java — no Gradle, no Kotlin runtime, no AndroidX bloat. Instant zoom-in app launches, hardware-accelerated focus animations, and full compatibility from Android 7.0 / 8.0 up to Android 14 TV firmwares.
 
 ---
