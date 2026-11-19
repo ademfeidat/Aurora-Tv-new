@@ -1,4 +1,8 @@
-# tvOS Launcher (`v2.2.0`)
+# AURORA TV — Android TV Launcher
+
+> AURORA TV is an independent customization of [tvOS Launcher](https://github.com/techgenius1/tvOS-Launcher) by techgenius. The upstream project’s Apache-2.0 license and attribution notices are retained in `LICENSE` and `NOTICE`. Modified files will be identified in their change history.
+
+## Upstream project (`v2.2.0`)
 
 > 🇹🇷 **Türkçe dokümantasyon ve kurulum rehberi için:** **[README_TR.md (Türkçe)](README_TR.md)**  
 > 📦 **Download Latest APK (`v2.2.0`):** **[GitHub Releases](https://github.com/techgenius1/tvOS-Launcher/releases/latest)**
