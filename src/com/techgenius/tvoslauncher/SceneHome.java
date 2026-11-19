@@ -1371,9 +1371,9 @@ final class SceneHome {
         dockBox.setPadding(padH, padV, padH, padV);
 
         MainActivity.LiquidGlass dockGlass = new MainActivity.LiquidGlass(
-                dp(23), 0x541E141C, host.glassSource, host.screenW, host.screenH, host.unit);
-        dockGlass.lens = dp(10);
-        dockGlass.rimStrength = 0.38f;
+                dp(29), 0x3E17202B, host.glassSource, host.screenW, host.screenH, host.unit);
+        dockGlass.lens = dp(14);
+        dockGlass.rimStrength = 0.48f;
         dockBox.setBackground(dockGlass);
 
         dockContainer.addView(dockBox, new LinearLayout.LayoutParams(
@@ -1382,7 +1382,7 @@ final class SceneHome {
         FrameLayout.LayoutParams dlp = new FrameLayout.LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT,
                 Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL);
-        dlp.bottomMargin = dp(14);
+        dlp.bottomMargin = dp(20);
         overlay.addView(dockContainer, dlp);
     }
 
@@ -1643,13 +1643,15 @@ final class SceneHome {
         updateShelfAndDashboardTopMargin();
 
         float scale = Scenes.getDockScaleFactor(host);
-        int tileSize = Math.max(dp(26), Math.round(dp(54) * scale));
-        int tileGap = Math.max(dp(4), Math.round(dp(10) * scale));
-        int padH = Math.max(dp(8), Math.round(dp(13) * scale));
-        int padV = Math.max(dp(6), Math.round(dp(10) * scale));
+        // AURORA TV: wide, spacious bottom dock sized for a 10-foot TV interface.
+        // Keep the source app artwork untouched; only adjust tile geometry and dock framing.
+        int tileSize = Math.max(dp(34), Math.round(dp(68) * scale));
+        int tileGap = Math.max(dp(8), Math.round(dp(14) * scale));
+        int padH = Math.max(dp(14), Math.round(dp(20) * scale));
+        int padV = Math.max(dp(10), Math.round(dp(14) * scale));
         dockBox.setPadding(padH, padV, padH, padV);
 
-        int maxDockInnerW = Math.max(tileSize * 4, host.screenW - dp(72) - 2 * padH);
+        int maxDockInnerW = Math.max(tileSize * 4, host.screenW - dp(48) - 2 * padH);
         int maxColsFit = Math.max(4, (maxDockInnerW + tileGap) / (tileSize + tileGap));
         int cols = Math.min(12, maxColsFit);
         currentDockCols = cols;
